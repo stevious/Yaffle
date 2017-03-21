@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmYaffle));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSeriesName = new System.Windows.Forms.TextBox();
@@ -36,10 +37,10 @@
             this.txtSeason = new System.Windows.Forms.TextBox();
             this.txtBaseEpisode = new System.Windows.Forms.TextBox();
             this.lvwOutput = new System.Windows.Forms.ListView();
-            this.btnRename = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
             this.clmSource = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmOutput = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnRename = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -123,6 +124,16 @@
             this.lvwOutput.DragDrop += new System.Windows.Forms.DragEventHandler(this.lvwOutput_DragDrop);
             this.lvwOutput.DragEnter += new System.Windows.Forms.DragEventHandler(this.lvwOutput_DragEnter);
             // 
+            // clmSource
+            // 
+            this.clmSource.Text = "Source File";
+            this.clmSource.Width = 534;
+            // 
+            // clmOutput
+            // 
+            this.clmOutput.Text = "Output";
+            this.clmOutput.Width = 229;
+            // 
             // btnRename
             // 
             this.btnRename.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,16 +156,6 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // clmSource
-            // 
-            this.clmSource.Text = "Source File";
-            this.clmSource.Width = 534;
-            // 
-            // clmOutput
-            // 
-            this.clmOutput.Text = "Output";
-            this.clmOutput.Width = 229;
-            // 
             // frmYaffle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,6 +171,7 @@
             this.Controls.Add(this.txtSeriesName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmYaffle";
             this.Text = "Yaffle!";
